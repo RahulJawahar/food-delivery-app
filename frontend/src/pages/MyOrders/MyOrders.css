@@ -1,0 +1,85 @@
+.my-orders {
+    margin: 50px 0px;
+}
+
+.my-orders h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Container */
+.my-orders .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each Order Card */
+.my-orders-order {
+    display: grid;
+    grid-template-columns: 60px 2fr 1fr 1fr 1fr auto;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    padding: 20px;
+    color: #454545;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Parcel icon */
+.my-orders-order img {
+    width: 50px;
+}
+
+/* Order text */
+.my-orders-order p {
+    margin: 0;
+}
+
+/* Status dot */
+.my-orders-order p span {
+    color: tomato;
+    margin-right: 5px;
+}
+
+/* Button */
+.my-orders-order button {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    background-color: #ffe1e1;
+    color: #ff4d4d;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.my-orders-order button:hover {
+    background-color: #ffd6d6;
+}
+
+/* Empty state */
+.my-orders .container p {
+    font-size: 16px;
+    color: gray;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .my-orders-order {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+        font-size: 12px;
+    }
+
+    .my-orders-order img {
+        width: 40px;
+    }
+
+    .my-orders-order button {
+        justify-self: start;
+    }
+}
